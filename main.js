@@ -199,6 +199,8 @@ async function StartProgram() {
     const puppeteer = require('puppeteer');
     const data = {"url":url,"UserName":UserName,"UserNameSelector":UserNameSelector,"PassSelector":PassSelector}
     //TODO Make it use the aloni password Generator
+    //TODO break the data to chanks of x retries
+    //TODO limit it to x workers
     TryPassword("Pass",puppeteer,data)
 
 }
